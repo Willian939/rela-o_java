@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>História do JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: 1px solid #00acc1;
+            border-radius: 10px;
+        }
+        .card-img-top {
+            height: 300px; 
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-3 text-center" style="background-color: #1f1f1f; border-bottom: 2px solid #00acc1;">
+        <h1>História do JavaScript</h1>
+    </header>
+
+    <div class="container my-4">
+        <div class="card mb-4">
+            <img src="java.png" class="card-img-top" alt="JavaScript">
+            <div class="card-body">
+                <h2>O que é JavaScript?</h2>
+                <p>JavaScript é uma linguagem de programação interpretada, projetada para criar interação em páginas web.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#infoModal">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <img src="css.jpg" class="card-img-top" alt="HTML e CSS">
+            <div class="card-body">
+                <h2>Relação com HTML e CSS</h2>
+                <p>JavaScript funciona junto com HTML e CSS para criar páginas web dinâmicas.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#infoModal">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <img src="php.jpg" class="card-img-top" alt="PHP">
+            <div class="card-body">
+                <h2>Relação com PHP</h2>
+                <p>PHP é uma linguagem do lado do servidor, enquanto JavaScript é executado no lado do cliente.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#infoModal">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#exitModal">Sair</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark border-info">
+                <div class="modal-header">
+                    <h5 class="modal-title text-info">Mais Informações</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>JavaScript é uma linguagem criada em 1995 por Brendan Eich.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exitModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark border-info">
+                <div class="modal-header">
+                    <h5 class="modal-title text-info">Confirmação</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Você realmente deseja sair?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button class="btn btn-danger" id="confirmarSaida">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
